@@ -3,21 +3,22 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Story extension for PHPUnit to facilitate Behaviour-Driven Development
 Name:		php-phpunit-PHPUnit_Story
-Version:	1.0.0
-Release:	2
+Version:	1.0.1
+Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	0094f35333a8db544a558f016d16b03a
+# Source0-md5:	695f52dc55ce64d863f8e12fcf16e854
 URL:		http://pear.phpunit.de/package/PHPUnit_Story/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.9.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(spl)
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-pear
+Requires:	php-phpunit-PHPUnit >= 3.6.0-0.RC1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
