@@ -4,7 +4,7 @@
 Summary:	%{pearname} - Story extension for PHPUnit to facilitate Behaviour-Driven Development
 Name:		php-phpunit-PHPUnit_Story
 Version:	1.0.2
-Release:	1
+Release:	2
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -18,7 +18,7 @@ BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(spl)
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-pear
-Requires:	php-phpunit-PHPUnit >= 3.6.0-0.RC1
+Requires:	phpunit >= 3.6.0-0.RC1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
