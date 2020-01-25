@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	PHPUnit_Story
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Story extension for PHPUnit to facilitate Behaviour-Driven Development
 Name:		php-phpunit-PHPUnit_Story
 Version:	1.0.2
